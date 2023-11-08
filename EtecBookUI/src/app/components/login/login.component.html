@@ -11,7 +11,7 @@
         </div>
 
         <div class="form-floating mb-2">
-            <input formControlName="password" type="text" class="form-control" id="password" placeholder="Senha de Acesso" [class.is-invalid]="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')">
+            <input formControlName="password" type="password" class="form-control" id="password" placeholder="Senha de Acesso" [class.is-invalid]="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')">
             <label for="password">Senha de Acesso</label>
             <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')" class="text-danger text-start d-block my-1">Campo Obrigatório</small>
         </div>
